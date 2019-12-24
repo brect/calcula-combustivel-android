@@ -39,7 +39,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Preço Alcool"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="@+id/texto_descricao"
         app:layout_constraintStart_toStartOf="@+id/texto_descricao"
         app:layout_constraintTop_toBottomOf="@+id/text_exemplo_alcool" />
@@ -71,7 +71,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Preço Gasolina"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="@+id/valor_alcool"
         app:layout_constraintStart_toStartOf="@+id/valor_alcool"
         app:layout_constraintTop_toBottomOf="@+id/text_exemplo_gasolina"
