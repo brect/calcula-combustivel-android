@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="Saiba a melhor opção para o abasteciomento do seu carro"
+        android:text="Saiba a melhor opção para o abastecimento do seu carro"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/imagem_logo_app"
         app:layout_constraintStart_toStartOf="@+id/imagem_logo_app"
