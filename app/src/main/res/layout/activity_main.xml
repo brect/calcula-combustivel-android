@@ -24,27 +24,24 @@
         android:id="@+id/texto_descricao"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
         android:gravity="center"
         android:text="Saiba a melhor opção para o abasteciomento do seu carro"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imagem_logo_app"
+        app:layout_constraintStart_toStartOf="@+id/imagem_logo_app"
         app:layout_constraintTop_toBottomOf="@+id/imagem_logo_app" />
 
     <EditText
         android:id="@+id/valor_alcool"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Preço Alcool"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/text_exemplo_alcool"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/texto_descricao"
+        app:layout_constraintStart_toStartOf="@+id/texto_descricao"
         app:layout_constraintTop_toBottomOf="@+id/text_exemplo_alcool" />
 
     <TextView
@@ -69,14 +66,16 @@
 
     <EditText
         android:id="@+id/valor_gasolina"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Preço Gasolina"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/text_exemplo_gasolina"
-        app:layout_constraintTop_toBottomOf="@+id/text_exemplo_gasolina" />
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/valor_alcool"
+        app:layout_constraintStart_toStartOf="@+id/valor_alcool"
+        app:layout_constraintTop_toBottomOf="@+id/text_exemplo_gasolina"
+        />
 
     <Button
         android:id="@+id/btn_calcular"
@@ -87,6 +86,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
+        android:onClick="calcularPreco"
         android:text="Calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,6 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="@+id/btn_calcular"
         app:layout_constraintStart_toStartOf="@+id/btn_calcular"
         app:layout_constraintTop_toBottomOf="@+id/btn_calcular"
